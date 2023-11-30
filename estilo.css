@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+
+}
+
+body{
+    position: relative;
+    background: #f0f0f0;
+    font-family: 'roboto', sans-serif;
+}
+
+.menu-site{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.hamburguer-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+    /*background: black;*/
+}
+
+.hamburguer-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:black;
+
+}
+
+.hamburguer-btn span:nth-child(1){
+top:0;
+}
+
+.hamburguer-btn span:nth-child(3){
+    top:100%;
+}
+
+.logo{
+    height: 30px;
+    margin: -10px 30px 0;
+}
+
+.busca-site{
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    width: 50%;
+    height: 35px;
+    display: flex;
+}
+
+.busca-input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16PX;
+    text-transform: capitalize;
+}
+
+.busca-btn{
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+
+}
+
+.busca-btn img{
+    height: 100%;
+
+}
+
+.usuario-menu{
+   height: 35px;
+   margin-left:auto;
+   cursor: pointer;
+   display: flex;
+}
+
+.usuario-menu .icone{
+height: 80%;
+margin-right: 20px;
+cursor: pointer;
+
+}
+
+
+.usuario-perfil{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.usuario-perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*BARRA LATERAL DO SITE*/
+
+.barra-lateral{
+    position: fixed;
+    top:60px;
+    left: 0;
+    min-width: 250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: #fff;
+    padding-right: 10px;
+}
+
+.links{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.links img{
+    height: 20px;
+    margin-right: 20px;
+
+}
+
+.links:hover,
+.links.ativo{
+    background: rgba(0,0,0,0.1);
+}
+
+.divisor{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+/*FIM DA BARRA LATERAL DO SITE*/
+
+.filtros{
+    position: fixed;
+    top: 60px;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+
+.filtros::-webkit-scrollbar{
+    display: none;
+
+}
+
+.opcoes-filtros{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.opcoes-filtros.ativo{
+    color: #fff;
+    background:#000;
+}
+
+
+/*CORPO - VIDEOS DO SITE*/
+
+.corpo-videos{
+    width: calc(100% -250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px 5px;
+    overflow: hidden;
+
+}
+
+.video{
+    min-height: 250px;
+    height: auto;
+
+}
+
+.miniatura{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    
+}
+
+.conteudo-video{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.canal-icone{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+
+}
+
+.titulo-video{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.nome-do-canal{
+    font-size:14px;
+    max-resolution: 2px 0;
+    color: #979797;
+
+}
